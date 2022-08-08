@@ -1,12 +1,13 @@
 body {
     font-family: 'Lato', sans-serif;
-    background-image: url('../img/mandala-pattern-design-white-background_1308-43563.webp');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     color: #cc0000;
 }
+<!-- background-image: url('../img/mandala-pattern-design-white-background_1308-43563.webp');
+-->
 .head-two {
     color: blue;
 }
@@ -17,4 +18,25 @@ body {
 }
 .text {
     width: 500px;
+}
+.title {
+    color: chartreuse;
+
+}
+.link {
+        color: teal;
+    }
+
+    .link:hover {
+        color: tomato;
+    }
+.social-links .link {
+    color: teal;
+}
+    
+.social-links .link:focus {
+    color: orange;
+}
+p {
+    background-color: rgba(0, 255, 0, 0.2);
 }
