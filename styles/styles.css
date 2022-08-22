@@ -1,18 +1,22 @@
 body {
     font-family: 'Lato', sans-serif;
-    background-position: center center;
+    color: #cc0000;
+
+    background-position: right bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    color: #cc0000;
+    background-size: 340px;
+    background-image: url('../img/mandala-pattern-design-white-background_1308-43563.webp');
 }
-<!-- background-image: url('../img/mandala-pattern-design-white-background_1308-43563.webp');
--->
 .head-two {
     color: blue;
     background-color: blueviolet;
     padding: 10px 15px 20px 25px;
     border: blueviolet;
+}
+
+a {
+    text-decoration: none;
 }
 
 .button {
@@ -52,15 +56,53 @@ p {
     background-color: tomato;
     color: white;
 
-    /* ✅ Работает */
     padding-left: 20px;
     padding-right: 20px;
     margin-right: 50px;
     margin-left: 50px;
+}
 
-    /* ❌ Никакого эффекта */
-    width: 1000px;
-    height: 1000px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+.social-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.link {
+    margin-right: 50px;
+}
+
+.header {
+    background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(81, 121, 9, 0.15730042016806722) 35%, rgba(0, 212, 255, 1) 100%);
+
+}
+.footer {
+    background-image: linear-gradient(to right,
+                #c64f4f 15%,
+                #09792b 15%,
+                #09792b 40%,
+                #00b9ff 40%,
+                #00b9ff 65%,
+                #ffb800 65%);
+}
+.tile {
+    width: 200px;
+    height: 150px;
+    background-image: radial-gradient(circle at bottom left,
+                aqua 10%,
+                indigo 50%);
+}
+.post-title.angled {
+    color: #fff;
+        background-image: repeating-linear-gradient(-45deg,
+                #606dbc,
+                #606dbc 10px,
+                #465298 10px,
+                #465298 20px);
+}
+.conic {
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+    border-radius: 50%
 }
