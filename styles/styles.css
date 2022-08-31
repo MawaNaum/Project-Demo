@@ -19,10 +19,32 @@ a {
     text-decoration: none;
 }
 
+.sun {
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 .button {
     color: #004080;
     background-color: aqua;
 }
+.button:hover {
+    background-color: #ffb800;
+}
+
 .text {
     width: 500px;
 }
@@ -105,4 +127,133 @@ p {
     height: 200px;
     background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
     border-radius: 50%
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    margin: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box.relative {
+    position: relative;
+    top: 120px;
+    left: 120px;
+}
+
+.box:nth-child(1) {
+    background-color: teal;
+}
+
+.box:nth-child(2) {
+    background-color: orange;
+}
+
+.box:nth-child(3) {
+    background-color: palevioletred;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.thumb {
+    position: relative;
+    margin: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.thumb>.label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 8px 16px;
+    border-bottom-left-radius: 4px;
+
+    font-family: sans-serif;
+    font-size: 24px;
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.chat-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1653/1653630.png");
+    background-size: contain;
+
+    cursor: pointer;
+}
+
+.thumb {
+    border: 10px solid green;
+    border-radius: 50px;
+    width: 480px;
+
+    overflow: hidden;
+}
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9fd;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: tomato;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    /*  Задаём значения перехода  */
+    transition-property: background-color, transform;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+}
+
+/* При ховере меняем значения анимируемых свойств */
+.box:hover {
+    background-color: teal;
+    transform: rotate(180deg);
 }
